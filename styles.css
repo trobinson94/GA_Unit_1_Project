@@ -18,6 +18,24 @@ form {
     display: inline;
 }
 
+.form-control {
+    background-color: lightgray;
+}
+
 #results {
     padding: 20px;
+}
+
+#books {
+    border-top: solid;
+    margin: 20px;
+    padding: 20px;
+}
+
+img {
+    float: right;
+    width:  128px;
+    height: 175px;
+    object-fit: contain;
+
 }

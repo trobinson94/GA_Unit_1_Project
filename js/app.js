@@ -37,8 +37,8 @@ function render(info){
     console.log("Data in render function: ", info)
     $("#results").empty();
     info.forEach( (result) =>{
-        var div = $("<div></div>")
-        div.append("<h3>Title: " + result.titles + "</h3>")
+        var div = $('<div id="books"></div>')
+        div.append("<h3>" + result.titles + "</h3>")
         div.append("<img src=" + result.img + ">")
         div.append("<p>Author: " + result.authors + "</p>")
         div.append("<p>Date published: " + result.publishDate + "</p>")
