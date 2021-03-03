@@ -18,14 +18,13 @@ function getData(event) {
        const info = searchData.map( (result) =>{
             return {
                 titles: result.volumeInfo.title,
-                authors: result.volumeInfo && result.volumeInfo.authors ? result.volumeInfo.authors[0] : "no author",
+                authors: result.volumeInfo && result.volumeInfo.authors ? result.volumeInfo.authors[0] : "no author", //Nullish coalescing
                 publishDate: result.volumeInfo.publishedDate,
-                description: result.volumeInfo.description ?? "No description", //nullish coal js
-                img: result.volumeInfo && result.volumeInfo.imageLinks ? result.volumeInfo.imageLinks.thumbnail : "https://i.imgur.com/kG84Vg8.jpg",
+                description: result.volumeInfo.description ?? "No description", //Nullish coalescing
+                img: result.volumeInfo && result.volumeInfo.imageLinks ? result.volumeInfo.imageLinks.thumbnail : "https://i.imgur.com/kG84Vg8.jpg", //Nullish coalescing
                 genre: result.volumeInfo.categories
             }
        })
-    //    console.log(info)
        render(info)
     }, 
     (error) => {
@@ -47,8 +46,7 @@ function render(info){
         div.append("<p>" + result.description + "</p>")
         
         $("#results").append(div);
-    }
-
+        }
     )
 }
 
