@@ -14,6 +14,10 @@ h2 {
     padding-left: 20px;
 }
 
+h3 {
+    padding-top: 20px;
+}
+
 form {
     display: inline;
 }
@@ -27,15 +31,53 @@ form {
 }
 
 #books {
-    border-top: solid;
-    margin: 20px;
-    padding: 20px;
+    border-top: solid; 
+    overflow: hidden;
+    height: 200px;
+}
+
+#description {
+    visibility: hidden;
 }
 
 img {
-    float: right;
-    width:  128px;
-    height: 175px;
-    object-fit: contain;
+    visibility: hidden;
+}
 
+/* ***************************
+** Tablet Media Query
+*************************** */
+
+@media screen and (min-width: 480px) {
+    img {
+        float: right;
+        /* visibility: visible; */
+    }
+}
+
+/* ***************************
+** Desktop Media Query
+*************************** */
+
+@media screen and (min-width: 995px) {
+    #books {
+        height: 100%;
+        border-top: none;
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    img {
+        /* transform: translate(-100px, -50px); */
+        transform: scale(1.25);
+        padding-top: 30px;
+        /* position: absolute; */
+        margin: auto;
+        visibility: visible;
+    }
+
+    #description {
+        visibility: visible;
+    }
 }

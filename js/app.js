@@ -21,7 +21,7 @@ function getData(event) {
                 authors: result.volumeInfo && result.volumeInfo.authors ? result.volumeInfo.authors[0] : "no author", //Nullish coalescing
                 publishDate: result.volumeInfo.publishedDate,
                 description: result.volumeInfo.description ?? "No description", //Nullish coalescing
-                img: result.volumeInfo && result.volumeInfo.imageLinks ? result.volumeInfo.imageLinks.thumbnail : "https://i.imgur.com/kG84Vg8.jpg", //Nullish coalescing
+                img: result.volumeInfo && result.volumeInfo.imageLinks ? result.volumeInfo.imageLinks.thumbnail : "https://i.imgur.com/jF7MPNn.jpg", //Nullish coalescing
                 genre: result.volumeInfo.categories
             }
        })
@@ -43,7 +43,7 @@ function render(info){
         div.append("<p>Author: " + result.authors + "</p>")
         div.append("<p>Date published: " + result.publishDate + "</p>")
         div.append("<p>Genre: " + result.genre + "</p>" )
-        div.append("<p>" + result.description + "</p>")
+        div.append('<p class="col-6">' + result.description + '</p>')
         
         $("#results").append(div);
         }
