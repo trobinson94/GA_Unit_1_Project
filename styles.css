@@ -1,6 +1,6 @@
 nav { 
     text-align: center;
-    background-color: salmon;
+    background-color: #83c5be;
 }
 
 span.navbar-text {
@@ -8,7 +8,7 @@ span.navbar-text {
     font-family: 'Hind', sans-serif;
 }
 main {
-    background-color: lightgray;
+    background-color: #edf6f9;
     font-family: 'Hind', sans-serif;
 }
 
