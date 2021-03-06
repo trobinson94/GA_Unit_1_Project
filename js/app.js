@@ -43,7 +43,7 @@ function render(info){
         div.append("<p>Author: " + result.authors + "</p>")
         div.append("<p>Date published: " + result.publishDate + "</p>")
         div.append("<p>Genre: " + result.genre + "</p>" )
-        div.append('<p class="col-6">' + result.description + '</p>')
+        div.append('<p id="description" class="col-9">' + result.description + '</p>')
         
         $("#results").append(div);
         }
