@@ -6,6 +6,11 @@
 - Uses the [Google Books Api](https://developers.google.com/books/docs/overview)
 - Application pulls first 10 search results based on the keyword from user input
 
+### Languages used
+- HTML
+- CSS/Bootstrap
+- Javascript/JQuery
+
 ---
 ## How to use this app
 
